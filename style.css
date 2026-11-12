@@ -41,3 +41,10 @@
 .today-backlog-copy{font-size:11px;line-height:1.7;color:#a092a7;margin-bottom:18px}
 @media(max-width:600px){.area-card{min-height:255px}.card-meters{padding-top:18px}.compact .meter-caption{font-size:9px;gap:5px}.compact .meter-caption strong{font-size:11px}.compact .meter-detail{font-size:8px}.area-progress-panel{padding:21px 19px;border-radius:21px}.area-progress-panel.two-meters{gap:20px;grid-template-columns:1fr}.card-finances{font-size:9px}.card-finances b{font-size:9px}.progress-note{font-size:9px}.card-open{margin-top:6px}}
 @media(prefers-reduced-motion:reduce){.meter-track span{transition:none}}
+
+/* Life Map mobile polish: use a consistent pink vector star and keep card numbers clear of icons. */
+.heading-star{display:inline-flex;vertical-align:middle;align-items:center;justify-content:center;color:#c899b2;font-size:0;line-height:1;margin-left:12px;}
+.heading-star svg{display:block;width:36px;height:36px;flex:none;}
+.area-card .card-top{display:flex;width:100%;min-width:0;align-items:flex-start;justify-content:space-between;gap:12px;}
+.area-card .card-number{display:block;flex:0 0 auto;margin-left:auto;align-self:flex-start;padding-top:4px;font-size:11px;line-height:1.2;white-space:nowrap;color:#aaa4b2;}
+@media(max-width:600px){.heading-star{margin-left:9px}.heading-star svg{width:29px;height:29px}.area-card .card-top{gap:8px}.area-card .card-number{font-size:10px;padding-top:3px}}

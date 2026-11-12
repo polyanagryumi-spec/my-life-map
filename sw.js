@@ -1,4 +1,4 @@
-const CACHE='life-map-public-v3';
+const CACHE='life-map-public-v4';
 const ASSETS=['./','./index.html','./style.css','./app.js','./seed.js','./core.js','./manifest.webmanifest','./icon.svg','./icon-192.png','./icon-512.png'];
 const allowed=new Set(ASSETS.map(path=>new URL(path,self.registration.scope).href));
 self.addEventListener('install',event=>{event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(ASSETS)).then(()=>self.skipWaiting()));});
